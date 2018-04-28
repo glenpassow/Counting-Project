@@ -45,7 +45,7 @@ PG = 0
 case = randint(0,100)
 print(case)
 
-While PB + PG <= N:
+While (PB + PG) <= N:
     GOB = randint(0,100)
     if case <= 80:
         if GOB > G:
