@@ -27,6 +27,8 @@ print("W = ",W,)
 print("M = ",M,)
 print("S = ",S,)
 print("The chosen situation is: situation #",situation,)
+print("")
+print("")
 
 #The following sets up which situations will be multiplied by 0 and 1 in the simulation
 if situation == 3:
