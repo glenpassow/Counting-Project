@@ -51,10 +51,10 @@ print(case)
 if situation == 1:
     while PB + PG < N:
         GOB = randint(0,100)
-            if GOB > G:
-                PB = PB + 1
-            else:
-                PG = PG + 1
+        if GOB > G:
+            PB = PB + 1
+        else:
+            PG = PG + 1
     cost = M + PB*D
     
 if situation == 2:
