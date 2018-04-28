@@ -78,7 +78,7 @@ if situation == 2:
                  PB = PB + 1
             else:
                 PG = PG + 1
-        cost = PB*D
+    cost = PB*D
 
 if situation == 3:
     while SB + SG < P:
@@ -99,10 +99,19 @@ if situation == 3:
                  SB = SB + 1
             else:
                 SG = SG + 1
-    print(SG)
-    print(SB)
-    cost = 0
+    if SB > 0:
+        while PB + PG < N:
+            GOB = randint(0,100)
+            if GOB > G:
+                PB = PB + 1
+            else:
+                PG = PG + 1
+        cost = P*S + M + D*PB
+       
+ 
 
+print(SG)
+print(SB)
 print(PG)
 print(PB)
 print(cost)
