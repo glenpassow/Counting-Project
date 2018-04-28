@@ -45,6 +45,7 @@ PG = 0
 case = randint(0,100)
 print(case)
 
+#determine the number of good and bad parts for any given situation
 while PB + PG < N:
     GOB = randint(0,100)
     if case <= 80:
@@ -52,31 +53,24 @@ while PB + PG < N:
             PB = PB + 1
         else:
             PG = PG + 1
-        print ("1")
     if case > 95:
         if GOB > W:
             PB = PB + 1
         else:
             PG = PG + 1
-        print("2")
     if case > 80 and case <= 95:
         if GOB > K:
              PB = PB + 1
         else:
             PG = PG + 1
-        print("3")
- 
 print(PG)
 print(PB)
  
-    
-'''
-case = randint(0,100)
-
-if situation == 1:
-    if case <= 80:
  
-    if case > 95:
-        
-    else:
-'''
+if situation == 1:
+    cost = M + PB*D
+    
+if situation == 2:
+    cost = PB*D
+    
+print(cost)
