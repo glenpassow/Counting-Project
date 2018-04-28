@@ -101,6 +101,7 @@ if situation == 3:
                 SG = SG + 1
     print(SG)
     print(SB)
+    cost = 0
 
 print(PG)
 print(PB)
