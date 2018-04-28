@@ -1,7 +1,8 @@
 N = int(input("Input N (300-1000): The number of parts in the final production run"))
 D = int(input("Input D (3-9): The cost of fixing a bad part for the production run"))
-G = int(input("Input  (96-99): "))
-K = int(input("Input  (88-92): "))
-W = int(input("Input  (78-84): "))
-M = int(input("Input  (50-100): "))
-S = int(input("Input  (2-6): "))
+G = int(input("Input G (96-99): The % of good parts made if 0 adjustments needed"))
+K = int(input("Input K (88-92): The % of good parts made if 1 adjustment needed"))
+W = int(input("Input W (78-84): The % of good parts made if 2 adjustments needed"))
+M = int(input("Input M (50-100): The cost of bringing the master mechanic"))
+S = int(input("Input S (2-6): The cost per sample part"))
+
