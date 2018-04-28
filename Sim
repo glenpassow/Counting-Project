@@ -1,3 +1,5 @@
+from random import randint
+
 N = int(input("Input N (300-1000): The number of parts in the final production run"))
 D = int(input("Input D (3-9): The cost of fixing a bad part for the production run"))
 G = int(input("Input G (96-99): The % of good parts made if 0 adjustments needed"))
@@ -21,5 +23,21 @@ print("M = ",M,)
 print("S = ",S,)
 print("The chosen situation is: situation #",situation,)
 
+#The following sets up which situations will be multiplied by 0 and 1 in the simulation
 if situation == 3:
     print("The number of parts to be samples is: ",P,)
+    S1 = 0
+    S2 = 0
+    S3 = 1
+
+if situation == 2:
+    S1 = 0
+    S2 = 1
+    S3 = 0
+    
+if situation == 1:
+    S1 = 1
+    S2 = 0
+    S3 = 0
+    
+case = randint(0,100)
