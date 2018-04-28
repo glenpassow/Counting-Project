@@ -55,6 +55,7 @@ if situation == 1:
             PB = PB + 1
         else:
             PG = PG + 1
+    
     cost = M + PB*D
     
 if situation == 2:
@@ -76,8 +77,11 @@ if situation == 2:
                  PB = PB + 1
             else:
                 PG = PG + 1
-    print(PG)
-    print(PB)
-    cost = PB*D
+        cost = PB*D
+
+print(PG)
+print(PB)
+print(cost)
+    
     
 print(cost)
