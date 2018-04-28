@@ -52,16 +52,19 @@ while PB + PG <= N:
             PB = PB + 1
         else:
             PG = PG + 1
+        print ("1")
     if case > 95:
         if GOB > W:
             PB = PB + 1
         else:
             PG = PG + 1
+        print("2")
     if case > 80 and case <= 95:
         if GOB > K:
              PB = PB + 1
         else:
             PG = PG + 1
+        print("3")
  
 print(PG)
 print(PB)
