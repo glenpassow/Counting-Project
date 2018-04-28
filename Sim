@@ -57,7 +57,7 @@ while PB + PG <= N:
             PB = PB + 1
         else:
             PG = PG + 1
-    else:
+    if case > 80 and case <= 95:
         if GOB > K:
              PB = PB + 1
         else:
