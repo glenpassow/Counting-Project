@@ -99,7 +99,8 @@ if situation == 3:
                  SB = SB + 1
             else:
                 SG = SG + 1
-    
+    print(SG)
+    print(SB)
 
 print(PG)
 print(PB)
