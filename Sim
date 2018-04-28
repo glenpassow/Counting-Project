@@ -48,7 +48,7 @@ if situation == 1:
     S3 = 0
 
 case = randint(0,100)
-print(case)    
+print("The random value used to choose the case is: ",case,)    
 
  
 if situation == 1:
