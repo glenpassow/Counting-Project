@@ -42,11 +42,10 @@ if situation == 1:
     
 PB = 0
 PG = 0
-PM = 0
 case = randint(0,100)
 print(case)
 
-While PM <= N:
+while PB + PG <= N:
     GOB = randint(0,100)
     if case <= 80:
         if GOB > G:
@@ -63,7 +62,6 @@ While PM <= N:
              PB = PB + 1
         else:
             PG = PG + 1
-    PM = PM + 1
  
 print(PG)
 print(PB)
