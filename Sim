@@ -126,10 +126,11 @@ if situation == 3:
                 else:
                     PG = PG + 1
         cost = S*P + D*PB
-        
- 
-print(SG)
-print(SB)
-print(PG)
-print(PB)
-print(cost)
+    print("Sampled parts good: ",SG,)
+    print("Sampled parts bad: ",SB,)    
+
+
+print("Number of good parts made: ",PG,)
+print("Number of bad parts made: ",PB,)
+print(" ")
+print("The total cost for this simulated production run was: ",cost,)
