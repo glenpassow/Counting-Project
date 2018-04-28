@@ -8,6 +8,10 @@ W = int(input("Input W (78-84): The % of good parts made if 2 adjustments needed
 M = int(input("Input M (50-100): The cost of bringing the master mechanic"))
 S = int(input("Input S (2-6): The cost per sample part"))
 
+PB = 0
+PG = 0
+    
+
 situation = int(input("Put in a 1 for situation 1 (call the mechanic), a 2 for situation 2 (Send it and don't call the mechanic), or 3 for sutation 3 (run a sample of parts)"))
 
 if situation == 3:
@@ -39,38 +43,41 @@ if situation == 1:
     S1 = 1
     S2 = 0
     S3 = 0
-    
-PB = 0
-PG = 0
-case = randint(0,100)
-print(case)
 
-#determine the number of good and bad parts for any given situation
-while PB + PG < N:
-    GOB = randint(0,100)
-    if case <= 80:
-        if GOB > G:
-            PB = PB + 1
-        else:
-            PG = PG + 1
-    if case > 95:
-        if GOB > W:
-            PB = PB + 1
-        else:
-            PG = PG + 1
-    if case > 80 and case <= 95:
-        if GOB > K:
-             PB = PB + 1
-        else:
-            PG = PG + 1
-print(PG)
-print(PB)
- 
+case = randint(0,100)
+print(case)    
+
  
 if situation == 1:
+    while PB + PG < N:
+        GOB = randint(0,100)
+            if GOB > G:
+                PB = PB + 1
+            else:
+                PG = PG + 1
     cost = M + PB*D
     
 if situation == 2:
+    #determine the number of good and bad parts for situation 2
+    while PB + PG < N:
+        GOB = randint(0,100)
+        if case <= 80:
+            if GOB > G:
+                PB = PB + 1
+            else:
+                PG = PG + 1
+        if case > 95:
+            if GOB > W:
+                PB = PB + 1
+            else:
+                PG = PG + 1
+        if case > 80 and case <= 95:
+            if GOB > K:
+                 PB = PB + 1
+            else:
+                PG = PG + 1
+    print(PG)
+    print(PB)
     cost = PB*D
     
 print(cost)
