@@ -82,6 +82,3 @@ if situation == 2:
 print(PG)
 print(PB)
 print(cost)
-    
-    
-print(cost)
