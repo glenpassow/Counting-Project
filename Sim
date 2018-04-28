@@ -9,6 +9,6 @@ S = int(input("Input S (2-6): The cost per sample part"))
 situation = int(input("Put in a 1 for situation 1 (call the mechanic), a 2 for situation 2 (Send it and don't call the mechanic), or 3 for sutation 3 (run a sample of parts)"))
 
 if situation == 3:
-    P = int(input("Input the number of parts to be sampled")
+    P = int(input("Input the number of parts to be sampled"))
     
 print("N = ",N,)
