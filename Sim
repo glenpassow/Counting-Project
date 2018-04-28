@@ -10,5 +10,16 @@ situation = int(input("Put in a 1 for situation 1 (call the mechanic), a 2 for s
 
 if situation == 3:
     P = int(input("Input the number of parts to be sampled"))
-    
+
+print(" ")
 print("N = ",N,)
+print("D = ",D,)
+print("G = ",G,)
+print("K = ",K,)
+print("W = ",W,)
+print("M = ",M,)
+print("S = ",S,)
+print("The chosen situation is: situation #",situation,)
+
+if situation == 3:
+    print("The number of parts to be samples is: ",P,)
