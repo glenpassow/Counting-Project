@@ -1,1 +1,1 @@
-b
+N = int(input("Input N (300-1000): The number of parts in the final production run"))
