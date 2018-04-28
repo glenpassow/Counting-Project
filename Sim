@@ -1,1 +1,7 @@
 N = int(input("Input N (300-1000): The number of parts in the final production run"))
+D = int(input("Input D (3-9): The cost of fixing a bad part for the production run"))
+G = int(input("Input  (96-99): "))
+K = int(input("Input  (88-92): "))
+W = int(input("Input  (78-84): "))
+M = int(input("Input  (50-100): "))
+S = int(input("Input  (2-6): "))
