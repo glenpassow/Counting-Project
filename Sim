@@ -42,11 +42,29 @@ if situation == 1:
     
 PB = 0
 PG = 0
+case = randint(0,100)
+print(case)
 
 While PB + PG <= N:
-    
+    GOB = randint(0,100)
+    if case <= 80:
+        if GOB > G:
+            PB = PB + 1
+        else:
+            PG = PG + 1
+    if case > 95:
+        if GOB > W:
+            PB = PB + 1
+        else:
+            PG = PG + 1
+    else:
+        if GOB > K:
+             PB = PB + 1
+        else:
+            PG = PG + 1
  
- while cycles
+print(PG)
+print(PB)
  
     
 '''
