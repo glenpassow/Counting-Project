@@ -1,5 +1,6 @@
 from random import randint
 
+#This is where the user inputs the variables for the simulated run
 N = int(input("Input N (300-1000): The number of parts in the final production run"))
 D = int(input("Input D (3-9): The cost of fixing a bad part for the production run"))
 G = int(input("Input G (96-99): The % of good parts made if 0 adjustments needed"))
@@ -7,17 +8,18 @@ K = int(input("Input K (88-92): The % of good parts made if 1 adjustment needed"
 W = int(input("Input W (78-84): The % of good parts made if 2 adjustments needed"))
 M = int(input("Input M (50-100): The cost of bringing the master mechanic"))
 S = int(input("Input S (2-6): The cost per sample part"))
+situation = int(input("Put in a 1 for situation 1 (call the mechanic), a 2 for situation 2 (Send it and don't call the mechanic), or 3 for sutation 3 (run a sample of parts)"))
 
+if situation == 3:
+    P = int(input("Input the number of parts to be sampled"))
+    
+#Variables are created to track the number of good and bad parts for the actual run and sample run
 PB = 0
 PG = 0
 SB = 0
 SG = 0
 
-situation = int(input("Put in a 1 for situation 1 (call the mechanic), a 2 for situation 2 (Send it and don't call the mechanic), or 3 for sutation 3 (run a sample of parts)"))
-
-if situation == 3:
-    P = int(input("Input the number of parts to be sampled"))
-
+#The users inputed information is displayed again for their viewing pleasure.
 for x in range (0,50):
     print(" ")
     
@@ -35,19 +37,6 @@ print("")
 #The following sets up which situations will be multiplied by 0 and 1 in the simulation
 if situation == 3:
     print("The number of parts to be samples is: ",P,)
-    S1 = 0
-    S2 = 0
-    S3 = 1
-
-if situation == 2:
-    S1 = 0
-    S2 = 1
-    S3 = 0
-    
-if situation == 1:
-    S1 = 1
-    S2 = 0
-    S3 = 0
 
 case = randint(0,100)
 print("The random value used to choose the case is: ",case,)    
