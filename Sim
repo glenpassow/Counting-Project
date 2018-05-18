@@ -34,14 +34,14 @@ print("The chosen situation is: situation #",situation,)
 print("")
 print("")
 
-#The following sets up which situations will be multiplied by 0 and 1 in the simulation
 if situation == 3:
     print("The number of parts to be samples is: ",P,)
 
+#A random number is generated to determine how many adjustments on the machine need fixing.
 case = randint(0,100)
 print("The random value used to choose the case is: ",case,)    
 
- 
+#The code that runs to make a simulated cost for strategy 1
 if situation == 1:
     while PB + PG < N:
         GOB = randint(0,100)
@@ -51,7 +51,8 @@ if situation == 1:
             PG = PG + 1
     
     cost = M + PB*D
-    
+
+#The code that runs to make a simulated cost for strategy 2
 if situation == 2:
     #determine the number of good and bad parts for situation 2
     while PB + PG < N:
@@ -73,6 +74,7 @@ if situation == 2:
                 PG = PG + 1
     cost = PB*D
 
+#The code that runs to make a simulated cost for strategy 3
 if situation == 3:
     while SB + SG < P:
         GOB = randint(0,100)
@@ -122,7 +124,7 @@ if situation == 3:
     print("Sampled parts good: ",SG,)
     print("Sampled parts bad: ",SB,)    
 
-
+#The final text at the end of the simulation
 print("Number of good parts made: ",PG,)
 print("Number of bad parts made: ",PB,)
 print(" ")
