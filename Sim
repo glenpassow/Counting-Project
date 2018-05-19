@@ -65,7 +65,7 @@ if situation == 2:
                 PB = PB + 1
         if case > 80 and case <= 95:
             if GOB > K:
-                 PB = PB + 1
+                PB = PB + 1
         else:
             PG = PG + 1
     cost = PB*D
