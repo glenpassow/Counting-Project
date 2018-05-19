@@ -39,8 +39,15 @@ if situation == 3:
 
 #A random number is generated to determine how many adjustments on the machine need fixing.
 case = randint(0,100)
-print("The random value used to choose the case is: ",case,)    
-
+print("The random value used to choose the case is: ",case,)
+if case <= 80:
+    if GOB > G:
+        print("Both adjustments are correct") 
+    if case > 95:
+        print("One adjustment is incorrect") 
+    if case > 80 and case <= 95:
+        print("Two adjustments are incorrect")
+    
 #The code that runs to make a simulated cost for strategy 1
 if situation == 1:
     while PB + PG < N:
