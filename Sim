@@ -60,18 +60,14 @@ if situation == 2:
         if case <= 80:
             if GOB > G:
                 PB = PB + 1
-            else:
-                PG = PG + 1
         if case > 95:
             if GOB > W:
                 PB = PB + 1
-            else:
-                PG = PG + 1
         if case > 80 and case <= 95:
             if GOB > K:
                  PB = PB + 1
-            else:
-                PG = PG + 1
+        else:
+            PG = PG + 1
     cost = PB*D
 
 #The code that runs to make a simulated cost for strategy 3
