@@ -77,19 +77,14 @@ if situation == 3:
         if case <= 80:
             if GOB > G:
                 SB = SB + 1
-            else:
-                SG = SG + 1
-            
         if case > 95:
             if GOB > W:
                 SB = SB + 1
-            else:
-                SG = SG + 1
         if case > 80 and case <= 95:
             if GOB > K:
                  SB = SB + 1
-            else:
-                SG = SG + 1
+        else:
+            SG = SG + 1
     if SB > 0:
         while PB + PG < N:
             GOB = randint(0,100)
@@ -104,18 +99,14 @@ if situation == 3:
             if case <= 80:
                 if GOB > G:
                     PB = PB + 1
-                else:
-                    PG = PG + 1
             if case > 95:
                 if GOB > W:
                     PB = PB + 1
-                else:
-                    PG = PG + 1
             if case > 80 and case <= 95:
                 if GOB > K:
                      PB = PB + 1
-                else:
-                    PG = PG + 1
+            else:
+                PG = PG + 1
         cost = S*P + D*PB
     print("Sampled parts good: ",SG,)
     print("Sampled parts bad: ",SB,)    
