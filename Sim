@@ -31,11 +31,10 @@ print("W - The % of good parts made if 2 adjustments needed = ",W,)
 print("M - The cost of bringing the master mechanic = ",M,)
 print("S - The cost of bringing the master mechanic = ",S,)
 print("The chosen situation is: situation #",situation,)
-print("")
-print("")
-
 if situation == 3:
     print("The number of parts to be samples is: ",P,)
+print("")
+print("")
 
 #A random number is generated to determine how many adjustments on the machine need fixing.
 case = randint(0,100)
